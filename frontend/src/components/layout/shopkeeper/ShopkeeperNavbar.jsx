@@ -7,18 +7,14 @@ import { useNavigate } from "react-router-dom";
 const NavBar = () => {
   const shopkeeperName = localStorage.getItem("ShopkeeperName");
   const navigate = useNavigate();
-  function handleClick() {
-    console.log("Clicked");
-  }
+  
 
   return (
     <nav className="navbar">
-      <h2 onClick={handleClick}>Hello, {shopkeeperName}</h2>
+      <h2>Hello, {shopkeeperName}</h2>
       <ul>
         
-        <li className="pointer" onClick={() => console.log("clicked")}>
-          lii
-        </li>
+       
         <li>
           <Link to="/shopkeeper-dashboard/profile">Profile</Link>
         </li>
