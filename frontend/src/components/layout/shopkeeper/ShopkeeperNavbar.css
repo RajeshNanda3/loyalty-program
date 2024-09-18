@@ -1,0 +1,20 @@
+/* src/components/layout/shopkeeper/ShopkeeperNavBar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: #333;
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
