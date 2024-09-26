@@ -14,6 +14,7 @@ exports.register = async (req, res) => {
   } = req.body;
 
   try {
+    console.log("list");
     const hashedPassword = await bcrypt.hash(password, 10);
 
     const newCustomer = new Customer({

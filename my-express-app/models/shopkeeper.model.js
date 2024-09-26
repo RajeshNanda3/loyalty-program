@@ -12,8 +12,8 @@ const shopkeeperSchema = new mongoose.Schema({
   district: { type: String, required: true },
   pincode: { type: String, required: true },
   shopDealsWith: { type: String, required: true },
-  latitude: { type: Number, required: true },
-  longitude: { type: Number, required: true },
+  latitude: { type: Number,  },
+  longitude: { type: Number,  },
   role: { type: String, default: "shopkeeper" },
 });
 

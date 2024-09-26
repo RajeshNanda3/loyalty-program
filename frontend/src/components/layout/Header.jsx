@@ -1,5 +1,5 @@
-// Header.jsx
 import React from 'react';
+import { NavLink } from "react-router-dom";
 import './Header.css';
 
 const Header = () => {
@@ -12,13 +12,13 @@ const Header = () => {
         <div className="nav-container">
           <div className="logo"> Logo Rajesh</div>
           <div className="nav-links">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            {/* <a href="#">Shop</a>
-            <a href="#">Donate</a> */}
-            <a href="/contact">Contact</a>
-            <a href="/contact">Register</a>
-            <a href="/login">Login</a>
+            <NavLink exact to="/" activeClassName="active">Home</NavLink>
+            <NavLink to="/about" activeClassName="active">About</NavLink>
+            {/* <NavLink to="#">Shop</NavLink>
+            <NavLink to="#">Donate</NavLink> */}
+            <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+            <NavLink to="/register" activeClassName="active">Register</NavLink>
+            <NavLink to="/login" activeClassName="active">Login</NavLink>
           </div>
           {/* <div className="cart-icon">
             🛒

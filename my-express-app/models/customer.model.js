@@ -8,8 +8,8 @@ const customerSchema = new mongoose.Schema({
   email: { type: String, required: true, unique: true },
   mobile: { type: String, required: true },
 
-  latitude: { type: Number, required: true },
-  longitude: { type: Number, required: true },
+  latitude: { type: Number,  },
+  longitude: { type: Number,  },
   role: { type: String, default: "customer" },
 });
 
