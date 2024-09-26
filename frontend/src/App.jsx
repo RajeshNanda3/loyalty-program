@@ -12,6 +12,8 @@ import Register from "./pages/Register";
  import LoginForm from "./pages/LoginForm";
 import { AppLayout } from "./components/layout/AppLaout";
 import ShopkeeperDashboard from "./pages/ShopkeeperDashboard";
+import CustomerDashboard from "./pages/CustomerDashboard"
+import CusomerDashboard from "./pages/CustomerDashboard";
 
 function App() {
   const router = createBrowserRouter([
@@ -49,6 +51,10 @@ function App() {
           path: "/shopkeeper-dashboard/*", //Add for trailing
           element: <ShopkeeperDashboard />,
         },
+        {
+          path: "/customer-dashboard/*",
+          element :<CustomerDashboard/>
+        }
       ],
     },
   ]);
